@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siêu A.I của TrGiahuy :))</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="../tinhchieucao/index.html" class="logo">Siêu A.I của Gia Huy :))</a>
+            <div class="nav-menu">
+                <ul>
+                    <li ><a href="../tinhchieucao/index.html" >Tính chiều cao</a></li>
+                    <li><a href="../tinhcannang/index.html">Tính cân nặng</a></li>
+                    <li class="active"><a href="../tinhbmi/index.html">Tính BMI</a></li>
+                </ul>
+                
+            </div>
+            <img src="./assets/img/fonts/menu-btn.png" alt="menu" class="menu-hamburger">
+        </nav>
+
+        <div class="container">
+            <div class="item">
+                <h1>Tính BMI</h1>
+                <p>Nhập vào chiều cao của bạn</p>
+                <input type="text" id="chieucao"><br>
+                <p>Nhập vào cân nặng của bạn</p>
+                <input type="text" id="cannang"><br>
+                <button id="btn">TÍNH</button>
+                <p id="output"></p>
+                <p id="nhanxet"></p>
+                <script src="./assets/js/main.js"></script>
+            </div>
+        </div>
+    </header>
+        
+            
+       
+    
+</body>
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger")
+    const navLinks = document.querySelector(".nav-menu")
+
+    menuHamburger.addEventListener('click',()=>{
+    navLinks.classList.toggle('mobile-menu')
+    })
+</script>
+</html>

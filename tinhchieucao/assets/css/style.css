@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    min-height: 100vh;
+    min-width: 100vw;
+    background: linear-gradient(45deg,#92FE9D,#00C9FF);
+}
+
+#navbar{
+   padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .nav-menu ul { 
+    display: flex;
+    
+}
+
+.nav-menu li a{
+    margin: 0 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px 12px;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all 0.2s ease;
+}
+
+.nav-menu li:hover a{
+    background-color: #fff;
+    color: #000;
+}
+
+#navbar .logo{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
+    border: 1px solid #fff;
+    padding: 12px 12px;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    width: 20%;
+    z-index: 1;
+    border-radius: 11px;
+}
+
+.container .item{
+    margin: auto 0;
+}
+
+.item{
+    color: #fff;
+}
+
+.item h1{
+    font-weight: bold;
+}
+
+.item p{
+    margin-top: 10px;
+}
+.item input{
+    margin-top: 10px;
+    
+    width: 80%;
+}
+
+.item button{
+    margin-top: 10px;
+    padding: 6px 12px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+}
+
+.item button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    border: 1px solid #fff;
+}
+
+.menu-hamburger{
+    top:50px;
+    right: 50px;
+    display: none;
+}
+
+.nav-menu li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+
+@media screen and (max-width: 900px){
+    .container{
+        min-width: 80%;
+        
+    }
+
+    .nav-menu ul{
+        flex-direction: column;
+    }
+
+    .menu-hamburger{
+        display: block;
+        z-index: 2;
+    }
+
+    #navbar{
+        padding: 40px 15px;
+    }
+
+    .nav-menu{
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(5px);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.5s ease;
+        margin-left: -100%;
+        z-index: 2;
+        font-weight: 700;
+        font-size: 2em;
+    }
+
+    .nav-menu li a{
+        border: none;
+        color: #000;
+    }
+
+    .nav-menu li{
+        margin: 60px 0;
+        text-align: center;;
+    }
+
+    .mobile-menu{
+        margin: 0;
+    }
+
+    #navbar .logo{
+        border: none;
+    }
+
+
+}
