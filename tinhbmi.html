@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siêu A.I của TrGiahuy :))</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        header{
+            background: linear-gradient(45deg,#667EEA,#764BA2);
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav id="navbar">
-            <a href="/index.html" class="logo">Siêu A.I của Gia Huy :))</a>
+            <a href="./index.html" class="logo">Siêu A.I của Gia Huy :))</a>
             <div class="nav-menu">
                 <ul>
-                    <li ><a href="/index.html" >Tính chiều cao</a></li>
-                    <li><a href="../tinhcannang/index.html">Tính cân nặng</a></li>
-                    <li class="active"><a href="../tinhbmi/index.html">Tính BMI</a></li>
+                    <li ><a href="./index.html" >Tính chiều cao</a></li>
+                    <li><a href="./tinhcannang.html">Tính cân nặng</a></li>
+                    <li class="active"><a href="./tinhbmi.html">Tính BMI</a></li>
                 </ul>
                 
             </div>
@@ -25,11 +30,11 @@
         <div class="container">
             <div class="item">
                 <h1>Tính BMI</h1>
-                <p>Nhập vào chiều cao của bạn</p>
-                <input type="text" id="chieucao"><br>
-                <p>Nhập vào cân nặng của bạn</p>
-                <input type="text" id="cannang"><br>
-                <button id="btn">TÍNH</button>
+                <p>Nhập chiều cao của bạn:</p>
+                <input type="text" placeholder=" cm" id="chieucao"><br>
+                <p>Nhập cân nặng của bạn:</p>
+                <input type="text" placeholder=" kg" id="cannang"><br>
+                <button id="btn" onclick="tinhbmi()">TÍNH</button>
                 <p id="output"></p>
                 <p id="nhanxet"></p>
                 <script src="./assets/js/main.js"></script>

@@ -10,12 +10,12 @@
 <body>
     <header>
         <nav id="navbar">
-            <a href="/index.html" class="logo">Siêu A.I của Gia Huy :))</a>
+            <a href="./index.html" class="logo">Siêu A.I của Gia Huy :))</a>
             <div class="nav-menu">
                 <ul>
-                    <li class="active"><a href="/index.html" >Tính chiều cao</a></li>
-                    <li><a href="../tinhcannang/index.html">Tính cân nặng</a></li>
-                    <li><a href="../tinhbmi/index.html">Tính BMI</a></li>
+                    <li class="active"><a href="./index.html" >Tính chiều cao</a></li>
+                    <li><a href="./tinhcannang.html">Tính cân nặng</a></li>
+                    <li><a href="./tinhbmi.html">Tính BMI</a></li>
                 </ul>
                 
             </div>
@@ -25,9 +25,9 @@
         <div class="container">
             <div class="item">
                 <h1>Tính chiều cao</h1>
-                <p>Nhập vào chiều cao của bạn</p>
-                <input type="text" id="chieucao"><br>
-                <button id="btn">TÍNH</button>
+                <p>Nhập chiều cao của bạn:</p>
+                <input type="text" placeholder=" cm" id="chieucao"><br>
+                <button id="btn" onclick="tinhchieucao()">TÍNH</button>
                 <p id="output"></p>
                 
                 <script src="./assets/js/main.js"></script>
